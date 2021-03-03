@@ -7,6 +7,7 @@
 
 :root {
     --primary-color: #da632d;
+    --primary-color-hover: #a74c22;
     --primary-text-color: #fff;
     --primary-text-hover-color: #000;
 }
@@ -36,6 +37,14 @@ header nav a {
 
 header nav a:hover {
     color: var(--primary-text-hover-color);
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    padding: .3rem;
+    border: 1px solid gray;
+    border-radius: .3rem;
 }
 
 /* ==== APROMS CONTAINER ==== */
@@ -51,8 +60,70 @@ header nav a:hover {
 
 /* ==== APROMS LOGIN ==== */
 #aproms-login-section {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/background_aproms_truck.jpg")  no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/background_aproms_truck.jpg")  no-repeat center;
     background-size: cover;
     width: 100%;
-    height: 45rem;
+    height: 50rem;
+    display: grid;
+    grid-template-columns: 2fr 40%;
+    gap: 4rem;
+}
+
+#aproms-login-section .aproms-login-content:first-child {
+    margin: 10rem 8rem;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#aproms-login-section .aproms-login-content {
+    margin: 4rem 8rem;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+#aproms-login-section .aproms-login-title {
+    font-weight: bold;
+    font-size: 3.5rem;
+    color: var(--primary-text-color);
+    text-transform: uppercase;
+}
+
+#aproms-login-section .aproms-login-text {
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--primary-text-color);
+}
+
+#aproms-login-section .aproms-login-content .form-login {
+    width: 70%;
+    margin: 0 auto;
+    background-color:#fff;
+    padding: 1rem 2rem;
+    color: gray;
+}
+
+.form-login .form-login-title {
+    color: rgb(51, 46, 46);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.form-login .form-login-content {
+    margin: 1.5rem 0;
+}
+
+.form-login .form-login-group {
+    text-align: left;
+}
+
+.btn-login {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    width: 100%;
+}
+
+.btn-login:hover {
+    border-color: var(--primary-color-hover);
+    background-color: var(--primary-color-hover);
 }
