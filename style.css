@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -31,7 +31,7 @@ header nav a {
     margin: 1rem;
     text-decoration: none;
     color: var(--primary-text-color);
-    transition: .2s;
+    transition: 0.2s;
     text-transform: uppercase;
 }
 
@@ -42,9 +42,9 @@ header nav a:hover {
 
 input {
     width: 100%;
-    padding: .5rem;
+    padding: 0.5rem;
     border: 1px solid gray;
-    border-radius: .3rem;
+    border-radius: 0.3rem;
 }
 
 /* ==== APROMS CONTAINER ==== */
@@ -60,7 +60,8 @@ input {
 
 /* ==== APROMS LOGIN ==== */
 #aproms-login-section {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/background_aproms_truck.jpg")  no-repeat center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("assets/background_aproms_truck.jpg") no-repeat center;
     background-size: cover;
     width: 100%;
     height: 50rem;
@@ -97,7 +98,7 @@ input {
 #aproms-login-section .aproms-login-content .form-login {
     width: 70%;
     margin: 0 auto;
-    background-color:#fff;
+    background-color: #fff;
     padding: 1rem 2rem;
     color: gray;
 }
@@ -126,4 +127,76 @@ input {
 .btn-login:hover {
     border-color: var(--primary-color-hover);
     background-color: var(--primary-color-hover);
+}
+
+/* ==== MOUSE ==== */
+.mouse-icon {
+    position: absolute;
+    top: 55rem;
+    left: 50%;
+    border: 2px solid #fff;
+    border-radius: 16px;
+    height: 40px;
+    width: 24px;
+    display: block;
+    z-index: 10;
+    opacity: 0.7;
+}
+.mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-name: drop;
+    animation-name: drop;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #fff;
+    width: 2px;
+    height: 6px;
+    top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@-webkit-keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
+}
+@keyframes drop {
+    0% {
+        top: 5px;
+        opacity: 0;
+    }
+    30% {
+        top: 10px;
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0;
+    }
 }
