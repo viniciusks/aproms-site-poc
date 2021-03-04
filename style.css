@@ -120,7 +120,7 @@ input {
 .btn-login {
     border-color: var(--primary-color);
     background-color: var(--primary-color);
-    width: 60%;
+    width: 100%;
 }
 
 .btn-login:hover {
